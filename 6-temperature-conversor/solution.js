@@ -5,15 +5,13 @@ temperatureType.toLowerCase();
 
 if (temperatureType === "c" || temperatureType === "f") {
   let temperature = prompt(
-    "What degree should I convert. Decimal values need to be separated with a '.'"
+    "What degree should I convert. [Decimal values need to be separated with a '.']"
   );
 
   temperature = Number(temperature);
 
   if (Number.isNaN(temperature)) {
-    alert(
-      "Try again you've typed in a wrong letter or used the , instead of ."
-    );
+    alert("Try again you've probably typed in a ',' instead of a '.'");
   } else if (typeof temperature === "number") {
     switch (temperatureType) {
       case "c":

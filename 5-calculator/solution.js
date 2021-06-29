@@ -20,7 +20,7 @@ while (operation !== "exit" && operation !== null) {
       alert(numberOne * numberTwo);
       break;
     default:
-      alert("Sie haben keinen richtigen Operator eingegeben");
+      alert("You've typed an invalid operator");
   }
   operation = prompt(
     "What operation you want to do? [+, -, /, *] Type 'exit' or cancel to finish"

@@ -19,6 +19,8 @@ while (operation !== "exit" && operation !== null) {
     case "*":
       alert(numberOne * numberTwo);
       break;
+    default:
+      alert("Sie haben keinen richtigen Operator eingegeben");
   }
   operation = prompt(
     "What operation you want to do? [+, -, /, *] Type 'exit' or cancel to finish"
